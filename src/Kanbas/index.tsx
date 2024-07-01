@@ -1,9 +1,7 @@
-// src/Kanbas/index.tsx
-import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Dashboard from './Dashboard';
-import Courses from './Courses';
-import KanbasNavigation from './Navigation';
+import Dashboard from "./Dashboard";
+import KanbasNavigation from "./Navigation";
+import { Routes, Route, Navigate } from "react-router";
+import Courses from "./Courses";
 
 export default function Kanbas() {
   return (
