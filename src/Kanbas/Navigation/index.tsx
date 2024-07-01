@@ -4,7 +4,7 @@ import React from 'react';
 export default function KanbasNavigation() {
   return (
     <ul id="wd-kanbas-navigation">
-      <li><a id="wd-neu-link" target="_blank" rel="noopener" href="https://www.northeastern.edu/">Northeastern</a></li>
+      <li><a id="wd-neu-link" target="_blank" rel="noreferrer" href="https://www.northeastern.edu/">Northeastern</a></li>
       <li><a id="wd-account-link" href="#/Kanbas/Account">Account</a></li>
       <li><a id="wd-dashboard-link" href="#/Kanbas/Dashboard">Dashboard</a></li>
       <li><a id="wd-course-link" href="#/Kanbas/Courses">Courses</a></li>
