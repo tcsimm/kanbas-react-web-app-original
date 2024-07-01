@@ -1,3 +1,4 @@
+// src/Labs/Lab1/index.tsx
 import React from 'react';
 
 export default function Lab1() {
