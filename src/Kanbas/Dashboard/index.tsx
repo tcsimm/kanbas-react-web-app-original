@@ -1,15 +1,14 @@
+// src/Kanbas/Dashboard/index.tsx
 import React from 'react';
 
 export default function Dashboard() {
   return (
     <div id="wd-dashboard">
-      <h1 id="wd-dashboard-title">Dashboard</h1>
-      <hr />
-      <h2 id="wd-dashboard-published">Published Courses (12)</h2>
-      <hr />
+      <h1 id="wd-dashboard-title">Dashboard</h1> <hr />
+      <h2 id="wd-dashboard-published">Published Courses (12)</h2> <hr />
       <div id="wd-dashboard-courses">
         <div className="wd-dashboard-course">
-          <img src="/images/reactjs.jpg" width={200} />
+          <img src="/images/reactjs.jpg" width={200} alt="ReactJS" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/1234/Home">
               CS1234 React JS
@@ -18,7 +17,8 @@ export default function Dashboard() {
             <a href="#/Kanbas/Courses/1234/Home"> Go </a>
           </div>
         </div>
-        {/* Add more courses as needed */}
+        <div className="wd-dashboard-course"> ... </div>
+        <div className="wd-dashboard-course"> ... </div>
       </div>
     </div>
   );
