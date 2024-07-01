@@ -1,4 +1,3 @@
-// src/Kanbas/Navigation/index.tsx
 import React from 'react';
 
 export default function KanbasNavigation() {
