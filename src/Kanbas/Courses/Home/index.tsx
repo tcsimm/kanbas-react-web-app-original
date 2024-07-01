@@ -1,8 +1,5 @@
-// src/Kanbas/Courses/Home/index.tsx
-import React from 'react';
-import Modules from '../Modules';
-import CourseStatus from './Status';
-
+import Modules from "../Modules";
+import CourseStatus from "./Status";
 export default function Home() {
   return (
     <table id="wd-home">
@@ -17,3 +14,4 @@ export default function Home() {
     </table>
   );
 }
+
