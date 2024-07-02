@@ -1,13 +1,19 @@
+// src/Kanbas/Navigation/index.tsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 export default function KanbasNavigation() {
   return (
-    <ul id="wd-kanbas-navigation">
-      <li><a id="wd-neu-link" target="_blank" href="https://www.northeastern.edu/">Northeastern</a></li>
-      <li><a id="wd-account-link" href="#/Kanbas/Account">Account</a></li>
-      <li><a id="wd-dashboard-link" href="#/Kanbas/Dashboard">Dashboard</a></li>
-      <li><a id="wd-course-link" href="#/Kanbas/Courses">Courses</a></li>
-      <li><a id="wd-calendar-link" href="#/Kanbas/Calendar">Calendar</a></li>
-      <li><a id="wd-inbox-link" href="#/Kanbas/Inbox">Inbox</a></li>
-      <li><a id="wd-labs-link" href="#/Labs">Labs</a></li>
-    </ul>
-);}
-
+    <nav>
+      <ul>
+        <li><Link to="/">Northeastern</Link></li>
+        <li><Link to="/Account">Account</Link></li>
+        <li><Link to="/Dashboard">Dashboard</Link></li>
+        <li><Link to="/Courses">Courses</Link></li>
+        <li><Link to="/Calendar">Calendar</Link></li>
+        <li><Link to="/Inbox">Inbox</Link></li>
+        <li><Link to="/Labs">Labs</Link></li>
+      </ul>
+    </nav>
+  );
+}
