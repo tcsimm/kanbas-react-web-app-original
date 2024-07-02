@@ -1,11 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function TOC() {
   return (
-    <ul>
-      <li><a href="#/Labs/Lab1">Lab 1</a></li>
-      <li><a href="#/Labs/Lab2">Lab 2</a></li>
-      <li><a href="#/Labs/Lab3">Lab 3</a></li>
-    </ul>
+    <div>
+      <h1>Labs</h1>
+      <ul>
+        <li><Link to="Lab1">Lab 1</Link></li>
+        <li><Link to="Lab2">Lab 2</Link></li>
+        <li><Link to="Lab3">Lab 3</Link></li>
+      </ul>
+    </div>
   );
 }

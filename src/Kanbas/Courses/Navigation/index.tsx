@@ -1,15 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function CoursesNavigation() {
+interface NavigationProps {
+  courseId: string | undefined;
+}
+
+export default function Navigation({ courseId }: NavigationProps) {
   return (
-    <ul id="wd-courses-navigation">
-      <li><a id="wd-course-home-link" href="#/Kanbas/Courses/1234/Home">Home</a></li>
-      <li><a id="wd-course-modules-link" href="#/Kanbas/Courses/1234/Modules">Modules</a></li>
-      <li><a id="wd-course-piazza-link" href="#/Kanbas/Courses/1234/Piazza">Piazza</a></li>
-      <li><a id="wd-course-zoom-link" href="#/Kanbas/Courses/1234/Zoom">Zoom</a></li>
-      <li><a id="wd-course-quizzes-link" href="#/Kanbas/Courses/1234/Assignments">Assignments</a></li>
-      <li><a id="wd-course-assignments-link" href="#/Kanbas/Courses/1234/Quizzes">Quizzes</a></li>
-      <li><a id="wd-course-grades-link" href="#/Kanbas/Courses/1234/Grades">Grades</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><Link to={`/Kanbas/Courses/${courseId}`}>Home</Link></li>
+        <li><Link to={`/Kanbas/Courses/${courseId}/Assignments`}>Assignments</Link></li>
+        <li><Link to={`/Kanbas/Courses/${courseId}/Modules`}>Modules</Link></li>
+      </ul>
+    </nav>
   );
 }

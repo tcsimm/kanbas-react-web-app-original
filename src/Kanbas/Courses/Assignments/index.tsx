@@ -1,24 +1,25 @@
-export default function Assignments() {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+interface AssignmentsProps {
+  courseId: string | undefined;
+}
+
+export default function Assignments({ courseId }: AssignmentsProps) {
   return (
-    <div id="wd-assignments">
-      <input id="wd-search-assignment"
-             placeholder="Search for Assignments" />
-      <button id="wd-add-assignment-group">+ Group</button>
-      <button id="wd-add-assignment">+ Assignment</button>
-      <h3 id="wd-assignments-title">
-        ASSIGNMENTS 40% of Total <button>+</button>
-      </h3>
-      <ul id="wd-assignment-list">
-        <li className="wd-assignment-list-item">
-          <a className="wd-assignment-link"
-            href="#/Kanbas/Courses/1234/Assignments/123">
-            A1 - ENV + HTML
-          </a>
+    <div>
+      <h2>Assignments</h2>
+      <ul>
+        <li>
+          <Link to={`/Kanbas/Courses/${courseId}/Assignments/1`}>Assignment 1</Link>
         </li>
-        <li className="wd-assignment-list-item">
-          {/* Complete On Your Own */}
+        <li>
+          <Link to={`/Kanbas/Courses/${courseId}/Assignments/2`}>Assignment 2</Link>
+        </li>
+        <li>
+          <Link to={`/Kanbas/Courses/${courseId}/Assignments/3`}>Assignment 3</Link>
         </li>
       </ul>
     </div>
-);}
-
+  );
+}

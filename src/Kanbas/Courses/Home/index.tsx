@@ -1,17 +1,14 @@
-import Modules from "../Modules";
-import CourseStatus from "./Status";
-export default function Home() {
-  return (
-    <table id="wd-home">
-      <tr>
-        <td valign="top">
-          <Modules />
-        </td>
-        <td valign="top">
-          <CourseStatus />
-        </td>
-      </tr>
-    </table>
-  );
+import React from 'react';
+
+interface HomeProps {
+  courseId: string | undefined;
 }
 
+export default function Home({ courseId }: HomeProps) {
+  return (
+    <div>
+      <h2>Course Home - {courseId}</h2>
+      <p>Welcome to the course!</p>
+    </div>
+  );
+}

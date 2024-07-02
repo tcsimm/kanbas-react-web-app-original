@@ -1,11 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Kanbas from './Kanbas';
+import Labs from './Labs';
 
 function App() {
   return (
-    <div className="App">
-      <Kanbas />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/*" element={<Kanbas />} />
+          <Route path="/Labs/*" element={<Labs />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
