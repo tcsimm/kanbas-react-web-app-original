@@ -13,7 +13,6 @@ export default function CourseStatus() {
   };
 
   const handleViewNotifications = () => {
-    // Add functionality to view course notifications
     setNotifications([
       'Notification 1: Assignment due date changed',
       'Notification 2: New material added to the course',
