@@ -5,8 +5,8 @@ export default function Dashboard() {
       <h2 id="wd-dashboard-published">Published Courses (12)</h2> <hr />
       <div id="wd-dashboard-courses">
         <div className="wd-dashboard-course">
-          <img src="reactjs.jpg" width={200} alt="React JS Course" />
-          <div>
+        <img src="/images/logo512.png" width={200} alt="React JS Course" />
+        <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/1234/Home">
               CS1234 React JS
             </a>
