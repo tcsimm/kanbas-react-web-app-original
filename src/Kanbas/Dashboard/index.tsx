@@ -17,7 +17,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/logo512.png" width={200} alt="Data analytics" />
+          <img src="/images/logo512.png" width={200} alt="Data Analytics Course" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/5678/Home">
               CS5690 Data Analytics
@@ -29,10 +29,10 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/logo512.png" width={200} alt="C programming" />
+          <img src="/images/logo512.png" width={200} alt="C Programming Course" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/9101/Home">
-              CS5250 C programming
+              CS5250 C Programming
             </a>
             <p className="wd-dashboard-course-title">
               C programming
@@ -41,7 +41,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/logo512.png" width={200} alt="Data Visualization" />
+          <img src="/images/logo512.png" width={200} alt="Data Visualization Course" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/1121/Home">
               CS5730 Data Visualization
@@ -86,6 +86,18 @@ export default function Dashboard() {
               Database Management Systems
             </p>
             <a href="#/Kanbas/Courses/7181/Home"> Go </a>
+          </div>
+        </div>
+        <div className="wd-dashboard-course">
+          <img src="/images/logo512.png" width={200} alt="Machine Learning Course" />
+          <div>
+            <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/9201/Home">
+              CS5900 Machine Learning
+            </a>
+            <p className="wd-dashboard-course-title">
+              Introduction to Machine Learning
+            </p>
+            <a href="#/Kanbas/Courses/9201/Home"> Go </a>
           </div>
         </div>
       </div>
