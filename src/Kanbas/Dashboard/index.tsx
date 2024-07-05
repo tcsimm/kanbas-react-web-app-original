@@ -17,7 +17,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/course2.jpg" width={200} alt="Data analytics" />
+          <img src="/images/logo512.png" width={200} alt="Data analytics" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/5678/Home">
               CS5690 Data Analytics
@@ -29,7 +29,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/course3.jpg" width={200} alt="C programming" />
+          <img src="/images/logo512.png" width={200} alt="C programming" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/9101/Home">
               CS5250 C programming
@@ -41,7 +41,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/course4.jpg" width={200} alt="Data Visualization" />
+          <img src="/images/logo512.png" width={200} alt="Data Visualization" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/1121/Home">
               CS5730 Data Visualization
@@ -53,7 +53,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/course5.jpg" width={200} alt="Data Mining Course" />
+          <img src="/images/logo512.png" width={200} alt="Data Mining Course" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/3141/Home">
               CS3820 Data Mining
@@ -65,7 +65,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/course6.jpg" width={200} alt="Web Browsers Course" />
+          <img src="/images/logo512.png" width={200} alt="Web Browsers Course" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/5161/Home">
               CS5610 Web Browsers
@@ -77,7 +77,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="wd-dashboard-course">
-          <img src="/images/course7.jpg" width={200} alt="Database Systems Course" />
+          <img src="/images/logo512.png" width={200} alt="Database Systems Course" />
           <div>
             <a className="wd-dashboard-course-link" href="#/Kanbas/Courses/7181/Home">
               CS5200 Database Systems
