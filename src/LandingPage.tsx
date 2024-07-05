@@ -20,7 +20,7 @@ export default function LandingPage() {
       </ul>
       <h2>Source Code Repositories</h2>
       <ul>
-        <li><a href="https://github.com/simmonsthomas/kanbas-react-web-app" target="_blank" rel="noopener noreferrer">Repository 1</a></li>
+        <li><a href="https://github.com/tcsimm/kanbas-react-web-app" target="_blank" rel="noopener noreferrer">Repository 1</a></li>
       </ul>
     </div>
   );
