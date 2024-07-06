@@ -1,3 +1,4 @@
+// src/Kanbas/Courses/index.tsx
 import React from 'react';
 import { Routes, Route, useParams, Navigate } from 'react-router-dom';
 import Home from './Home';
@@ -21,9 +22,9 @@ export default function Courses() {
               <Routes>
                 <Route path="/" element={<Navigate to="Home" />} />
                 <Route path="Home" element={<Home courseId={id} />} />
-                <Route path="Assignments" element={<Assignments courseId={id} />} />
-                <Route path="Assignments/:id" element={<AssignmentEditor />} />
                 <Route path="Modules" element={<Modules />} />
+                <Route path="Assignments" element={<Assignments courseId={id} />} />
+                <Route path="Assignments/:assignmentId" element={<AssignmentEditor />} />
               </Routes>
             </td>
           </tr>
