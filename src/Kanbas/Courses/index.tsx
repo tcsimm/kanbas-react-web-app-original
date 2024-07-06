@@ -1,9 +1,10 @@
+// src/Kanbas/Courses/index.tsx
 import React from 'react';
 import { Routes, Route, useParams, Navigate } from 'react-router-dom';
 import Home from './Home';
 import Assignments from './Assignments';
 import Modules from './Modules';
-import Navigation from './Navigation';
+import CoursesNavigation from './Navigation';
 import AssignmentEditor from './Assignments/Editor';
 
 export default function Courses() {
@@ -15,7 +16,7 @@ export default function Courses() {
         <tbody>
           <tr>
             <td valign="top">
-              <Navigation courseId={courseId} />
+              <CoursesNavigation courseId={courseId} />
             </td>
             <td valign="top">
               <Routes>
