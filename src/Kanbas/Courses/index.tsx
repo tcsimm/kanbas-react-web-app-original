@@ -1,30 +1,28 @@
 // src/Kanbas/Courses/index.tsx
-import React from 'react';
-import { Routes, Route, useParams, Navigate } from 'react-router-dom';
-import Home from './Home';
-import Assignments from './Assignments';
-import Modules from './Modules';
-import Navigation from './Navigation';
-import AssignmentEditor from './Assignments/Editor';
+
+import CoursesNavigation from "./Navigation";
+import Modules from "./Modules";
+import { Navigate, Route, Routes, useParams } from "react-router-dom";
 
 export default function Courses() {
   const { id } = useParams<{ id: string }>();
 
   return (
     <div id="wd-courses">
+      <h2>Course 1234</h2>
       <table>
         <tbody>
           <tr>
             <td valign="top">
-              <Navigation courseId={id} />
+              <CoursesNavigation courseId={id} />
             </td>
             <td valign="top">
               <Routes>
                 <Route path="/" element={<Navigate to="Home" />} />
-                <Route path="Home" element={<Home courseId={id} />} />
+                <Route path="Home" element={<h3>Home</h3>} />
                 <Route path="Modules" element={<Modules />} />
-                <Route path="Assignments" element={<Assignments courseId={id} />} />
-                <Route path="Assignments/:assignmentId" element={<AssignmentEditor />} />
+                <Route path="Assignments" element={<h3>Assignments</h3>} />
+                <Route path="Assignments/:id" element={<h3>Assignment Editor</h3>} />
               </Routes>
             </td>
           </tr>
